@@ -6,7 +6,7 @@ export class UserService {
     constructor(private readonly userRepository: IUserRepository ){}
 
     async createUser(user:User): Promise<User> {
-        return await this.userRepository.create(user)
+        return await this.userRepository.create(user);
     }
 
     async deleteUser(id: number): Promise<boolean> {
