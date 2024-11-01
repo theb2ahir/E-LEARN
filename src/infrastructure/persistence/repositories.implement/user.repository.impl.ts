@@ -6,7 +6,7 @@ import Database from "../database.config/db.config";
 export class userRepositoryImpl implements IUserRepository{ 
 
     private db = Database.getInstance();
-    private connection  = this.db.getConnection();
+    private connection  = this.db.getConnection();y
 
     async create(user: User): Promise<User> {
         const { id, name, password, career, email, createTime } = user;
