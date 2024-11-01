@@ -1,10 +1,10 @@
 import { Lesson } from "../../../domain/entities/lesson.entity";
-import { lessonService } from "../../services/lesson.service";
+import { LessonService } from "../../services/lesson.service";
 
 
-class deleteLesson {
+export class DeleteLesson {
 
-    constructor(private readonly lessonService: lessonService ) {}
+    constructor(private readonly lessonService: LessonService ) {}
 
     async execute(id: number): Promise<boolean> {
         return await this.lessonService.deleteLesson(id);

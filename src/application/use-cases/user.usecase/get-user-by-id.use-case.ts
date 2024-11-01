@@ -2,7 +2,7 @@ import { User } from "../../../domain/entities/user.entity";
 import { UserService } from "../../services/user.service";
 
 
-class getUserById {
+export class GetUserById {
 
     constructor(private readonly userService: UserService ) {}
 

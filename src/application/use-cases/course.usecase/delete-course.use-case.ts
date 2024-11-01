@@ -1,9 +1,9 @@
-import { courseService } from "../../services/course.service";
+import { CourseService } from "../../services/course.service";
 
 
-class deleteCourse {
+export class DeleteCourse {
 
-    constructor(private readonly courseService: courseService ) {}
+    constructor(private readonly courseService: CourseService ) {}
 
     async execute(id: number): Promise<boolean> {
         return await this.courseService.deleteCourse(id);

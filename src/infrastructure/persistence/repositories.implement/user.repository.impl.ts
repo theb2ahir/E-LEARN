@@ -3,7 +3,7 @@ import { IUserRepository } from "../../../domain/repositories/user.repository";
 import Database from "../database.config/db.config";
 
 
-export class userRepositoryImpl implements IUserRepository{ 
+export class UserRepositoryImpl implements IUserRepository{ 
 
     private db = Database.getInstance();
     private connection  = this.db.getConnection();y

@@ -3,7 +3,7 @@ import { ILessonRepository } from "../../domain/repositories/lesson.repository";
 
 
 
-export class lessonService {
+export class LessonService {
 
     constructor(private readonly lessonRepository:ILessonRepository){}
 

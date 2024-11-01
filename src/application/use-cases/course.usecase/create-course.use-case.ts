@@ -1,11 +1,11 @@
 import { Course } from "../../../domain/entities/course.entity";
-import { courseService } from "../../services/course.service";
+import { CourseService } from "../../services/course.service";
 
-class createCourse {
+export class CreateCourse {
 
-    constructor(private readonly courseService: courseService ) {}
+    constructor(private readonly courseService: CourseService ) {}
 
-    async execute(id: number): Promise<Course> {
-        return await this.courseService.createCourse(id);
+    async execute(course: Course): Promise<Course> {
+        return await this.courseService.createCourse(course);
     }
 }

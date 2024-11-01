@@ -2,7 +2,7 @@ import { User } from "../../../domain/entities/user.entity";
 import { UserService } from "../../services/user.service";
 
 
-class  deleteUser {
+export class  DeleteUser {
 
     constructor(private readonly userService: UserService ){}
 

@@ -1,11 +1,11 @@
 import { Lesson } from "../../../domain/entities/lesson.entity";
-import { lessonService } from "../../services/lesson.service";
+import { LessonService } from "../../services/lesson.service";
 
 
 
-class updateLesson {
+export class UpdateLesson {
 
-    constructor(private readonly lessonService: lessonService ) {}
+    constructor(private readonly lessonService: LessonService ) {}
 
     async execute(lesson: Partial<Lesson>): Promise<Lesson> {
         return await this.lessonService.updateLesson(lesson);

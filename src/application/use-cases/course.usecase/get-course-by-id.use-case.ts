@@ -1,10 +1,10 @@
 import { Course } from "../../../domain/entities/course.entity";
-import { courseService } from "../../services/course.service";
+import { CourseService } from "../../services/course.service";
 
 
-class geCourseById {
+export class GetCourseById {
 
-    constructor(private readonly courseService: courseService ) {}
+    constructor(private readonly courseService: CourseService ) {}
 
     async execute(id: number): Promise<Course> {
         return await this.courseService.getCourseById(id);

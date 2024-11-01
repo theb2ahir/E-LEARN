@@ -2,12 +2,12 @@ import { Course } from "../../domain/entities/course.entity";
 import { ICourseRepository } from "../../domain/repositories/course.repository";
 
 
-export class courseService {
+export class CourseService {
 
     constructor( private readonly courseRepository: ICourseRepository){}
 
-    async createCourse(id: number ): Promise<Course> {
-        return await this.courseRepository.create(id);
+    async createCourse(course:  Course): Promise<Course> {
+        return await this.courseRepository.create(course);
     }
 
     async deleteCourse(id: number): Promise<boolean> {

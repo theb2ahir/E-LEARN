@@ -2,7 +2,7 @@ import { Lesson } from "../../../domain/entities/lesson.entity";
 import { ILessonRepository } from "../../../domain/repositories/lesson.repository";
 import Database from "../database.config/db.config";
 
-export class lessonRepositoryImpl implements ILessonRepository {
+export class LessonRepositoryImpl implements ILessonRepository {
 
     private db = Database.getInstance();
     private connection = this.db.getConnection();
